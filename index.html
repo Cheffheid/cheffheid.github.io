@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              theme: "#f9f9f9",
+              highlight: "#065f5f",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-theme">
+    <div class="max-w-5xl pt-8 sm:pt-16 pb-4 mx-auto min-h-dvh bg-white">
+      <header
+        class="align-center flex flex-col items-center px-4 md:px-8 lg:px-12"
+      >
+        <a href="https://jeffreydewit.com/" class="flex align-center gap-1">
+          <h1 class="font-bold text-xl">Jeffrey de Wit</h1>
+        </a>
+        <nav aria-label="Main Navigation">
+          <ul class="flex gap-4">
+            <li>
+              <a href="#projects" class="hover:text-highlight hover:underline">
+                Side Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#webdevstudios"
+                class="hover:text-highlight hover:underline"
+              >
+                At WebDevStudios
+              </a>
+            </li>
+            <li>
+              <a href="#talks" class="hover:text-highlight hover:underline">
+                Talks I've Given
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="mt-16 sm:mt-32 px-4 md:px-8 lg:px-12">
+        <article class="mx-auto w-full max-w-7xl">
+          <header class="max-w-2xl mx-auto text-center">
+            <h1
+              class="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl"
+            >
+              Things I've worked on over the years.
+            </h1>
+            <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              I've worked on tons of projects over the years, either as part of
+              an agency or on my own. Anything that I am working on on the side
+              is going to be open source.
+            </p>
+          </header>
+          <section class="mt-16 sm:mt-20" id="projects">
+            <h2 class="mb-6 font-semibold text-zinc-800 text-2xl">
+              Side Projects
+            </h2>
+            <ul
+              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10"> Job Application Tracker </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A NextJS app for me to keep track of where and when I've
+                  applied.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="http://jobs.jeffreydewit.com"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>jobs.jeffreydewit.com</span>
+                  </a>
+                  <a
+                    href="https://github.com/Cheffheid/job-application-tracker"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none p-1">
+                      <use href="#icon-github" />
+                    </svg>
+
+                    <span>Project on Github</span>
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="mt-16 sm:mt-20" id="webdevstudios">
+            <h2 class="mb-6 font-semibold text-zinc-800 text-2xl">
+              At WebDevStudios
+            </h2>
+            <ul
+              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10"> Freeman.com </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A full rebuild with a custom design in WordPress.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="http://freeman.com"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>freeman.com</span>
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="mt-16 sm:mt-20" id="talks">
+            <h2 class="mb-6 font-semibold text-zinc-800 text-2xl">
+              Conference and Meetup Talks
+            </h2>
+            <ul
+              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10">
+                    Making Responsive Sites Accessible
+                  </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A talk I've given at the WordPress Orlando meetup.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="https://jeffreydewit.com/responsive-accessibility/#/"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                    aria-label="Slides for the Making Responsive Sites Accessible talk"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>Slides for this talk</span>
+                  </a>
+                </p>
+              </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10">
+                    Let WordPress Speak:<br />
+                    Introducing wp.a11y.speak()
+                  </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A talk I've given at WordCamp Orlando 2015.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="https://jeffreydewit.com/wp-a11y-speak/#/"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                    aria-label="Slides for the Let WordPress Speak: Introducing wp.a11y.speak() talk"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>Slides for this talk</span>
+                  </a>
+                </p>
+              </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10">
+                    Thinking About Accessibility & Security
+                  </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A talk I've given at WordCamp Orlando 2016.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="https://jeffreydewit.com/a11y-and-security/#/cover"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                    aria-label="Slides for the Thinking About Accessibility & Security talk"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>Slides for this talk</span>
+                  </a>
+                </p>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </main>
+      <footer class="px-4 md:px-8 lg:px-12 mt-16">
+        <h2 class="sr-only">Footer</h2>
+        <nav aria-label="Footer Navigation">
+          <ul class="flex gap-4">
+            <li>
+              <a
+                href="https://jeffreydewit.com"
+                class="transition hover:text-teal-500"
+                aria-label="Visit my site"
+              >
+                <svg class="h-6 w-6 flex-none">
+                  <use href="#icon-home" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Cheffheid"
+                class="transition hover:text-teal-500"
+                aria-label="Visit my Github profile"
+              >
+                <svg class="h-6 w-6 flex-none">
+                  <use href="#icon-github" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/jeffreydewit"
+                class="transition hover:text-teal-500"
+                aria-label="Visit my LinkedIn profile"
+              >
+                <svg class="h-6 w-6 flex-none">
+                  <use href="#icon-linkedin" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://bsky.app/profile/jeffreydewit.com"
+                class="transition hover:text-teal-500"
+                aria-label="Visit my BlueSky profile"
+              >
+                <svg class="h-6 w-6 flex-none">
+                  <use href="#icon-bluesky" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="hidden">
+      <symbol viewBox="0 0 24 24" id="icon-anchor">
+        <path
+          d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol id="icon-github" viewBox="0 0 24 24">
+        <path
+          d="M12 0.296c-6.627 0-12 5.372-12 12 0 5.302 3.438 9.8 8.206 11.387 0.6 0.111 0.82-0.26 0.82-0.577 0-0.286-0.011-1.231-0.016-2.234-3.339 0.726-4.043-1.416-4.043-1.416-0.546-1.387-1.332-1.756-1.332-1.756-1.089-0.745 0.082-0.729 0.082-0.729 1.205 0.085 1.839 1.237 1.839 1.237 1.070 1.834 2.807 1.304 3.492 0.997 0.108-0.775 0.418-1.305 0.762-1.605-2.666-0.303-5.467-1.332-5.467-5.93 0-1.31 0.469-2.381 1.237-3.221-0.125-0.302-0.536-1.523 0.116-3.176 0 0 1.008-0.322 3.301 1.23 0.957-0.266 1.984-0.399 3.004-0.404 1.020 0.005 2.047 0.138 3.006 0.404 2.291-1.553 3.297-1.23 3.297-1.23 0.653 1.653 0.243 2.873 0.118 3.176 0.769 0.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921 0.43 0.372 0.814 1.103 0.814 2.222 0 1.606-0.014 2.898-0.014 3.293 0 0.319 0.216 0.694 0.824 0.576 4.765-1.588 8.199-6.085 8.199-11.385 0-6.628-5.373-12-12-12z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 24 24">
+        <path
+          d="M24 5.306c-0.881 0.394-1.833 0.656-2.827 0.773 1.017-0.609 1.795-1.575 2.166-2.723-0.952 0.563-2.006 0.975-3.127 1.195-0.9-0.956-2.18-1.552-3.595-1.552-2.719 0-4.922 2.203-4.922 4.922 0 0.384 0.042 0.759 0.127 1.12-4.092-0.206-7.72-2.166-10.148-5.147-0.422 0.727-0.666 1.575-0.666 2.475 0 1.706 0.867 3.216 2.189 4.097-0.806-0.023-1.566-0.248-2.231-0.614 0 0.019 0 0.042 0 0.061 0 2.386 1.697 4.378 3.952 4.828-0.412 0.112-0.848 0.173-1.298 0.173-0.319 0-0.623-0.033-0.928-0.089 0.628 1.955 2.447 3.38 4.598 3.422-1.688 1.322-3.806 2.109-6.117 2.109-0.398 0-0.788-0.023-1.177-0.070 2.184 1.402 4.772 2.212 7.552 2.212 9.056 0 14.011-7.505 14.011-14.011 0-0.216-0.005-0.427-0.014-0.637 0.961-0.689 1.795-1.556 2.456-2.545z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path
+          d="M21.75 0h-19.5c-1.237 0-2.25 1.013-2.25 2.25v19.5c0 1.237 1.013 2.25 2.25 2.25h19.5c1.237 0 2.25-1.013 2.25-2.25v-19.5c0-1.237-1.013-2.25-2.25-2.25zM9 19.5h-3v-10.5h3v10.5zM7.5 7.5c-0.83 0-1.5-0.67-1.5-1.5s0.67-1.5 1.5-1.5c0.83 0 1.5 0.67 1.5 1.5s-0.67 1.5-1.5 1.5zM19.5 19.5h-3v-6c0-0.83-0.67-1.5-1.5-1.5s-1.5 0.67-1.5 1.5v6h-3v-10.5h3v1.861c0.619-0.848 1.566-1.861 2.625-1.861 1.866 0 3.375 1.678 3.375 3.75v6.75z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24">
+        <path
+          d="M24 13.839l-12-9.315-12 9.315v-3.798l12-9.315 12 9.315zM21 13.5v9h-6v-6h-6v6h-6v-9l9-6.75z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+      <symbol id="icon-bluesky" viewBox="0 0 568 501">
+        <path
+          d="M123.121 33.664C188.241 82.553 258.281 181.68 284 234.873c25.719-53.192 95.759-152.32 160.879-201.21C491.866-1.611 568-28.906 568 57.947c0 17.346-9.945 145.713-15.778 166.555-20.275 72.453-94.155 90.933-159.875 79.748C507.222 323.8 536.444 388.56 473.333 453.32c-119.86 122.992-172.272-30.859-185.702-70.281-2.462-7.227-3.614-10.608-3.631-7.733-.017-2.875-1.169.506-3.631 7.733-13.43 39.422-65.842 193.273-185.702 70.281-63.111-64.76-33.89-129.52 80.986-149.071-65.72 11.185-139.6-7.295-159.875-79.748C9.945 203.659 0 75.291 0 57.946 0-28.906 76.135-1.612 123.121 33.664Z"
+          fill="currentColor"
+        ></path>
+      </symbol>
+    </svg>
+  </body>
+</html>
