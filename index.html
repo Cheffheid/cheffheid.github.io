@@ -17,7 +17,9 @@
     </script>
   </head>
   <body class="bg-theme">
-    <div class="max-w-5xl pt-8 sm:pt-16 pb-4 mx-auto min-h-dvh bg-white">
+    <div
+      class="max-w-5xl pt-8 sm:pt-16 pb-4 mx-auto min-h-dvh bg-white xl:max-w-7xl"
+    >
       <header
         class="align-center flex flex-col items-center px-4 md:px-8 lg:px-12"
       >
@@ -61,12 +63,18 @@
               is going to be open source.
             </p>
           </header>
-          <section class="mt-16 sm:mt-20" id="projects">
-            <h2 class="mb-6 font-semibold text-zinc-800 text-2xl">
-              Side Projects
-            </h2>
+          <section class="mt-16 sm:mt-32" id="projects">
+            <header class="mb-6 max-w-2xl">
+              <h2 class="font-semibold text-zinc-800 text-2xl">
+                Side Projects
+              </h2>
+              <p class="text-zinc-600 dark:text-zinc-400">
+                These are mostly small projects and repositories for stuff I
+                wanted or needed.
+              </p>
+            </header>
             <ul
-              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
               <li class="group relative flex flex-col items-start">
                 <h3
@@ -86,6 +94,7 @@
                   <a
                     href="http://jobs.jeffreydewit.com"
                     class="flex items-center gap-1 hover:text-teal-500 transition"
+                    aria-label="My Job Application Tracker project on Github"
                   >
                     <svg class="h-6 w-6 flex-none">
                       <use href="#icon-anchor" />
@@ -105,14 +114,81 @@
                   </a>
                 </p>
               </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10"> BoardGameGeek Data Apps </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A CLI tool that I built to browse boardgame and user data on
+                  BoardGameGeek.com. Made with Python.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="https://github.com/Cheffheid/bggdata"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                    aria-label="My BoardGameGeek Data tool project on Github"
+                  >
+                    <svg class="h-6 w-6 flex-none p-1">
+                      <use href="#icon-github" />
+                    </svg>
+
+                    <span>Project on Github</span>
+                  </a>
+                </p>
+              </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10">
+                    Astro frontend for my site
+                  </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  Currently a work in progress, but so far mostly functional
+                  Astro build to replace my current website but keep the
+                  WordPress backend.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="https://github.com/Cheffheid/cheffism-astro"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                    aria-label="My Astro frontend project on Github"
+                  >
+                    <svg class="h-6 w-6 flex-none p-1">
+                      <use href="#icon-github" />
+                    </svg>
+
+                    <span>Project on Github</span>
+                  </a>
+                </p>
+              </li>
             </ul>
           </section>
-          <section class="mt-16 sm:mt-20" id="webdevstudios">
-            <h2 class="mb-6 font-semibold text-zinc-800 text-2xl">
-              At WebDevStudios
-            </h2>
+          <section class="mt-16 sm:mt-32" id="webdevstudios">
+            <header class="mb-6 max-w-2xl">
+              <h2 class="font-semibold text-zinc-800 text-2xl">
+                At WebDevStudios
+              </h2>
+              <p class="text-zinc-600 dark:text-zinc-400">
+                Most of these projects are complete rebuilds of existing
+                websites with a new design and at times a migration to
+                WordPress. This list is by no means exhaustive, but does
+                represent most of the last four years of my time there.
+              </p>
+            </header>
             <ul
-              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
               <li class="group relative flex flex-col items-start">
                 <h3
@@ -123,7 +199,10 @@
                 <p
                   class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
                 >
-                  A full rebuild with a custom design in WordPress.
+                  A full rebuild and migration of existing WordPress content
+                  into a new installation (multisite to single site). A Full
+                  Site Editing theme with custom Gutenberg blocks and API
+                  integrations.
                 </p>
                 <p
                   class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
@@ -140,14 +219,115 @@
                   </a>
                 </p>
               </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10"> ChristianityToday.com </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  This was a full rebuild with a custom design in WordPress.
+                  Includes a wide array of features and customized integrations
+                  like Amazon, Google Ads, Piano as well as a custom WordPress
+                  blocks.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="http://christianitytoday.com"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>christianitytoday.com</span>
+                  </a>
+                </p>
+              </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10"> ChurchLawAndTax.com </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A full rebuild with a custom design in WordPress. Includes an
+                  Algolia integration too, as well as Piano for paywalls and
+                  authentication.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="http://churchlawandtax.com"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>churchlawandtax.com</span>
+                  </a>
+                </p>
+              </li>
+              <li class="group relative flex flex-col items-start">
+                <h3
+                  class="text-base font-semibold text-zinc-800 dark:text-zinc-100"
+                >
+                  <span class="relative z-10"> Campbell's LATAM </span>
+                </h3>
+                <p
+                  class="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400"
+                >
+                  A custom implementation of an existing theme for the LATAM
+                  market. For MX, this includes changes that needed to be made
+                  to the Nutritional Facts Panel that is displayed on products.
+                </p>
+                <p
+                  class="relative z-10 mt-6 flex flex-col text-sm font-medium text-zinc-600 dark:text-zinc-400"
+                >
+                  <a
+                    href="https://www.campbells.com/mx/"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>Campbell's Mexico</span>
+                  </a>
+                  <a
+                    href="https://www.campbells.com/es/"
+                    class="flex items-center gap-1 hover:text-teal-500 transition"
+                  >
+                    <svg class="h-6 w-6 flex-none">
+                      <use href="#icon-anchor" />
+                    </svg>
+
+                    <span>Campbell's LATAM</span>
+                  </a>
+                </p>
+              </li>
             </ul>
           </section>
-          <section class="mt-16 sm:mt-20" id="talks">
-            <h2 class="mb-6 font-semibold text-zinc-800 text-2xl">
-              Conference and Meetup Talks
-            </h2>
+          <section class="mt-16 sm:mt-32" id="talks">
+            <header class="mb-6 max-w-2xl">
+              <h2 class="font-semibold text-zinc-800 text-2xl">
+                Conference and Meetup Talks
+              </h2>
+              <p class="text-zinc-600 dark:text-zinc-400">
+                It has been a while, and a pandemic definitely hasn't helped
+                here, but I've given conference talks before too.
+              </p>
+            </header>
             <ul
-              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
+              class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
             >
               <li class="group relative flex flex-col items-start">
                 <h3
